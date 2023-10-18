@@ -1,0 +1,61 @@
+body {
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  font-family: "East Sea Dokdo", cursive;
+  font-family: "Roboto", sans-serif;
+  color: #7c7c7c;
+}
+h1 {
+  font-size: 15px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  bottom: 8px;
+}
+h2 {
+  font-size: 20px;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+  text-align: right;
+  margin: 0 auto;
+}
+
+#warnings {
+  font-size: 15px;
+}
+
+#location-button {
+  margin: 0px 0px 0px 28px;
+}
+
+#temperature {
+  font-size: 35px;
+  color: black;
+}
+#celsius {
+  font-size: 11px;
+  position: relative;
+  bottom: 16px;
+}
+img {
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+.row {
+  font-size: 20px;
+  text-align: center;
+  margin: auto;
+}
+
+.bottom-card {
+  text-align: center;
+}
+form.hange-city-form {
+  text-align: left;
+}

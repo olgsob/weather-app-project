@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+    <title>Weather App</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-header top-card">
+          <form class="change-city-form" action="/submit">
+            <input
+              type="text"
+              name="search-location"
+              placeholder="Search city"
+              id="search-input"
+            />
+            <input type="submit" value ="Search" />
+            <button id = "location-button">Current Location</button>
+          </form>
+          
+        </div>
+        <div class="card-body top-card">
+          
+          <h1 id="local-time"></h1>
+         <h2 id="current-city"></h2>       
+         <div id="warnings"></div>
+          <div id="temperature"></div>
+          <img src="src/image.png"/>
+          <ul>
+          <li id="humidity"></li>
+          <li id="wind-speed"></li>
+          </ul>
+          </div>
+          
+      <div class="card">
+        <div class="card-header bottom-card">10 August 2023 - 14 August 2023</div>
+        <div class="card-body bottom-card">
+          <blockquote class="blockquote mb-0">
+            <div class="row">
+              <div class="col">🌤<br /><small>12°C - 21°C</small></div>
+              <div class="col">⚡️<br /><small>10°C - 12°C</small></div>
+              <div class="col">🌦<br /><small>5°C - 7°C</small></div>
+              <div class="col">🌤<br /><small>7°C - 10°C</small></div>
+              <div class="col">☀️<br /><small>12°C - 20°C</small></div>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  	<script src="src/index.js">
+    </script>
+  </body>
+</html>
