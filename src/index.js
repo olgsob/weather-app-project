@@ -23,7 +23,7 @@ function formatTime(time) {
 
   function formatTemperature(response) {
 
-    document.querySelector("h2").innerHTML = response.data.name;
+    document.querySelector("#current-city").innerHTML = response.data.name;
     document.querySelector("#temperature").innerHTML = `${Math.round(response.data.main.temp)}<span id="celsius">°C</span>`;
     document.querySelector("#warnings").innerHTML = response.data.weather[0].main;
 document.querySelector("#humidity").innerHTML = `Humidity: ${response.data.main.humidity}%`;
@@ -56,7 +56,7 @@ searchCity(city);
   }
   
   let currentTime = new Date();
-  document.querySelector("h1").innerHTML = formatTime(currentTime);
+  document.querySelector("#local-time").innerHTML = formatTime(currentTime);
   
   let searchInput = document.querySelector("form");
   searchInput.addEventListener("submit", changeCity);
