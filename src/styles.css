@@ -24,9 +24,7 @@ ul {
   font-size: 15px;
 }
 
-#location-button {
-  margin: 0px 0px 0px 28px;
-}
+
 
 #temperature {
   font-size: 33px;
@@ -53,9 +51,6 @@ img {
 .bottom-card {
   text-align: center;
 }
-form.hange-city-form {
-  text-align: left;
-}
 
 .first-line {
 display: flex;
@@ -64,4 +59,10 @@ justify-content: space-between;
 
 #local-time {
   font-size: 15px;
+}
+
+.card-header.top-card {
+  display: flex;
+  justify-content: space-between;
+
 }
